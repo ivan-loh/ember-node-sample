@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>some blog</title>
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+
+  <!-- Libraries -->
+  <script src="components/jquery/dist/jquery.js"></script>
+  <script src="components/handlebars/handlebars.js"></script>
+  <script src="components/ember/ember.debug.js"></script>
+  <script src="components/ember/ember-template-compiler.js"></script>
+  <script src="components/ember-data/ember-data.js"></script>
+  <script src="ember-handlebars-loader-0.0.2.js"></script>
+
+  <!-- Application -->
+  <script src="blogger.js"></script>
+  <script src="router.js"></script>
+
+  <!-- Routes -->
+  <script src="routes/posts.js"></script>
+  <script src="routes/recent-comments.js"></script>
+  <script src="routes/post.js"></script>
+
+  <!-- Controllers -->
+  <script src="controllers/about.js"></script>
+  <script src="controllers/contact.js"></script>
+  <script src="controllers/posts.js"></script>
+  <script src="controllers/post.js"></script>
+  <script src="controllers/new-post.js"></script>
+  <script src="controllers/new-comment.js"></script>
+
+  <!-- Models -->
+  <script src="models/post.js"></script>
+  <script src="models/comment.js"></script>
+
+  <script>
+    EmberHandlebarsLoader.loadTemplates([
+      'application',
+      'posts', 'about', 'contact', 'phone', 'email',
+      'recent-comments', 'post', 'new-post', 'new-comment'
+    ]);
+  </script>
+</head>
+</html>

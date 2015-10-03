@@ -1,0 +1,23 @@
+<h1>a list</h1>
+
+<!--
+  <ul>
+    {{#each model as |item|}}
+      <li>{{#link-to 'post' item.id}}{{item.title}}{{/link-to}}</li>
+    {{/each}}
+  </ul>
+-->
+
+<ul>
+  {{#each}}
+    <li>{{#link-to 'post' this.id}}{{title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+<p>
+  <a href="#" {{action 'sortByTitle'}}>Sort By Title</a>
+</p>
+
+<p>
+  {{#link-to 'new-post' classNames="btn btn-primary"}}New Post{{/link-to}}
+</p>
